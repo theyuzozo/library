@@ -1,0 +1,6 @@
+{
+	"nodes":[
+		{"id":"b7d149c490bc6ea5","x":-300,"y":-320,"width":660,"height":400,"type":"text","text":"The Nature of Everything: Yin-Yang Four Phases\n\n阴阳谱系 · 万物四象\n\n| Four-Phase   | **四象** | Nature  | 阴阳性 |\n| ------------ | ------ | ------- | --- |\n| Greater Yin  | 老阴     | Cold    | 寒   |\n| Lesser Yin   | 少阴     | Cool    | 凉   |\n| Neutral      | 平      | Balance | 平衡  |\n| Lesser Yang  | 少阳     | Warm    | 温   |\n| Greater Yang | 老阳     | Hot     | 热   |"}
+	],
+	"edges":[]
+}
