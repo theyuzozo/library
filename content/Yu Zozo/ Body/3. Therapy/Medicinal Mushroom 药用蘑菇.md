@@ -1,0 +1,31 @@
+---
+title: 药用蘑菇 Medicinal Mushroom
+aliases:
+  - Medicinal Mushroom
+  - Medicinal Mushrooms
+  - 药用蘑菇
+  - 药用菌
+tags:
+  - mushrooms
+  - herbs
+  - tcm
+cssclasses:
+  - wide
+---
+
+| Mushroom<br>蘑菇 | Nature<br>性质 | Benefits<br>功效 | Main Compounds<br>主要成分 | Extraction<br>推荐提取 | Suitable<br>适合谁 | Unsuitable<br>不适合谁 |
+| --- | --- | --- | --- | --- | --- | --- |
+| ![[chaga-1.jpg]]![[chaga-2.jpg]]<br>**Chaga**<br>桦褐孔菌 | Neutral<br>中性 | Supports antioxidant and immune-related functions; traditionally used for general and digestive wellness.<br>抗氧化、免疫相关支持，传统上用于整体体质及消化调理。 | Polysaccharides, triterpenoids, polyphenols, melanin<br>多糖、三萜、多酚、黑色素 | **Hot water + ethanol**<br>热水＋乙醇。热水偏向多糖；乙醇偏向三萜及部分酚类。 | General wellness; antioxidant and immune-support preparations<br>日常体质、抗氧化及免疫支持 | Kidney stone / high-oxalate risk; caution with blood-thinning or blood-sugar-lowering medication<br>肾结石/高草酸风险；抗凝、降糖药物使用者慎用 |
+| ![[birch-polypore.jpg]]<br>**Birch Polypore**<br>桦树多孔菌 | Neutral<br>中性 | Traditionally used for digestive and general wellness; studied for antioxidant, antimicrobial and immune-related activity.<br>传统用于消化及整体健康；研究关注抗氧化、抗菌及免疫相关作用。 | Polysaccharides, triterpenoids, phenolic compounds<br>多糖、三萜、酚类 | **Hot water + ethanol**<br>热水＋乙醇。热水提取多糖；乙醇提取较疏水成分。 | Digestive and general wellness<br>消化及整体健康支持 | Pregnancy/breastfeeding; mushroom allergy; multiple medications<br>孕期、哺乳期、蘑菇过敏及多种药物使用者谨慎 |
+| ![[red-belt-conk.jpg]]<br>**Red Belt Conk**<br>红带菌 | Neutral<br>中性 | Studied for antioxidant, antimicrobial and immune-related potential.<br>研究方向主要包括抗氧化、抗菌及免疫相关活性。 | Polysaccharides, phenolics, triterpenoid-related compounds<br>多糖、酚类、三萜相关成分 | **Hot water + ethanol**<br>热水＋乙醇。适合较广谱的双相提取。 | General wellness; antioxidant and immune-support preparations<br>整体健康、抗氧化及免疫支持 | Pregnancy/breastfeeding; mushroom allergy; concentrated extracts used as disease treatment<br>孕哺期、蘑菇过敏者；不宜自行以浓缩提取物治疗疾病 |
+| ![[artist-conk.jpg]]<br>**Artist Conk**<br>画家灵芝 | Neutral<br>中性 | Traditionally used as a medicinal polypore; *Ganoderma* research focuses on immune modulation, antioxidant and inflammation-related activity.<br>传统作为药用多孔菌；灵芝属研究主要集中于免疫调节、抗氧化及炎症相关作用。 | Polysaccharides, triterpenoids, phenolic compounds<br>多糖、三萜、酚类 | **Hot water + ethanol**<br>热水＋乙醇。热水偏向多糖；乙醇偏向三萜等成分。 | General immune and wellness support<br>日常免疫及整体体质支持 | Anticoagulant/antiplatelet medication; bleeding disorders; pregnancy/breastfeeding<br>抗凝/抗血小板药物、出血风险、孕哺期者慎用 |
+| ![[turkey-tail.jpg]]<br>**Turkey Tail**<br>云芝 | Neutral<br>中性 | Strongly studied for immune modulation; contains polysaccharide compounds studied as adjuncts in cancer care.<br>免疫调节研究较充分；其多糖类成分被研究用于癌症辅助治疗方向。 | β-glucans, PSK, PSP, polysaccharopeptides<br>β-葡聚糖、PSK、PSP、多糖肽 | **Hot water**<br>热水。主要目标为多糖、β-葡聚糖、PSK/PSP。乙醇不是主要选择。 | Immune-support focused preparations<br>免疫支持方向 | Should not replace cancer treatment; caution with chemotherapy, immunotherapy or immunosuppressants<br>不能替代癌症治疗；化疗、免疫治疗或使用免疫抑制剂者先咨询专业人士 |
+| ![[reishi.jpg]]<br>**Reishi / Lingzhi**<br>灵芝 | Neutral / slightly warm<br>中性偏温 | Traditionally used to support qi, immune function, respiratory and general wellness; modern research focuses on immune modulation, antioxidant activity and inflammatory responses.<br>传统用于扶正、补气及整体体质调理；现代研究主要关注免疫调节、抗氧化及炎症反应。 | Polysaccharides, β-glucans, triterpenes (ganoderic acids), sterols, phenolic compounds<br>多糖、β-葡聚糖、三萜（灵芝酸）、甾醇、酚类 | **Hot water + ethanol**<br>热水＋乙醇双提取。热水主要提取多糖、β-葡聚糖；乙醇更适合三萜类，尤其是灵芝酸。 | General wellness; immune and antioxidant support; traditional qi-tonifying preparations<br>日常体质调理、免疫及抗氧化支持；传统扶正补气方向 | Bleeding disorders; anticoagulant/antiplatelet medications; pregnancy/breastfeeding; before surgery<br>出血性疾病、使用抗凝/抗血小板药物、孕哺期及手术前者需谨慎 |
+
+> [!tip] Why two extractions? 为什么要双提取？
+> Hot water pulls out the water-soluble **polysaccharides** and **β-glucans**; ethanol pulls out the less water-soluble **triterpenoids** and some phenolics. Most of these mushrooms use both (a "dual extract"). Turkey Tail is the exception: its key compounds (PSK, PSP) are polysaccharides, so hot water alone is the main choice.
+> 热水主要提取多糖、β-葡聚糖；乙醇主要提取三萜及部分酚类等较疏水成分。云芝的主要成分为多糖类，因此以热水提取为主。
+
+> [!warning] Note 注意
+> This is a study reference, not medical advice. Check with a qualified practitioner before using concentrated extracts, especially alongside medication, during pregnancy or breastfeeding, or before surgery.
+> 本页为学习参考，不构成医疗建议。使用浓缩提取物前（尤其是同时服药、孕哺期或手术前），请先咨询专业人士。

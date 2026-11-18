@@ -1,3 +1,211 @@
 @use "./variables.scss" as *;
 
-// put your custom CSS here!
+// ============================================================
+//  Yu Zozo · 宣纸 Rice Paper & Ink theme
+//  Colors live in quartz.config.yaml (theme → colors).
+//  English: Garamond Premier Pro if installed, else EB Garamond (web)
+//  Chinese: 方正刻本仿宋 if installed, else system 仿宋
+// ============================================================
+
+:root:root {
+  --zh: "FZKeBenFangSongS-R-GB", "FZKeBenFangSong-R-GBK", "Zhuque Fangsong", "STFangsong", "FangSong", "Songti SC", serif;
+  --bodyFont: "Garamond Premier Pro", "EB Garamond", var(--zh);
+  --headerFont: "Garamond Premier Pro Display", "Garamond Premier Pro", "EB Garamond", var(--zh);
+  --titleFont: var(--headerFont);
+  // Palette: ink black text · green links/highlights · red on hover · blue accents
+  --seal: #a8342a;
+  --accent: #2f5277;          // 靛蓝 indigo blue
+  --accent-bg: rgba(47, 82, 119, 0.07);
+}
+:root[saved-theme="dark"] {
+  --seal: #b5523f;
+  --accent: #8fabc9;
+  --accent-bg: rgba(143, 171, 201, 0.10);
+}
+
+// ---------- paper ----------
+body {
+  font-size: 18.5px;
+  line-height: 1.4;
+  -webkit-font-smoothing: antialiased;
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.05;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='300' height='300'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.4  0 0 0 0 0.3  0 0 0 0 0.2  0 0 0 1 0'/></filter><rect width='300' height='300' filter='url(%23n)'/></svg>");
+}
+
+// ---------- site title as a seal ----------
+.page-title {
+  font-family: var(--headerFont) !important;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+// ---------- headings ----------
+h1, h2, h3, h4 {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+h1.article-title,
+h1.article-title[data-quartz-component] {
+  font-family: var(--headerFont) !important;
+  font-size: 2.6rem;
+  line-height: 1.2;
+  letter-spacing: 0.06em;
+  border-top: 3px double var(--lightgray);
+  padding-top: 1.2rem;
+  margin-top: 1rem;
+}
+article h2 {
+  border-bottom: 1px solid var(--lightgray);
+  padding-bottom: 0.2rem;
+}
+.content-meta, .breadcrumb-container {
+  letter-spacing: 0.03em;
+}
+
+// ---------- links & tags ----------
+a.internal {
+  background-color: transparent;
+  border-bottom: 1px solid var(--highlight);
+  padding: 0;
+  border-radius: 0;
+}
+a.internal:hover { color: var(--tertiary); }
+a.internal.tag-link {
+  border-bottom: none;
+  border-radius: 2px;
+  background-color: var(--highlight);
+  padding: 0 0.5rem;
+}
+
+// ---------- tables ----------
+.table-container > table,
+article table {
+  border-collapse: collapse;
+  font-size: 0.88em;
+  line-height: 1.24;
+  th {
+    background-color: var(--highlight);
+    color: var(--dark);
+    font-weight: 600;
+    text-align: left;
+    padding: 0.6rem 0.75rem;
+    border-bottom: 1px solid var(--lightgray);
+    vertical-align: bottom;
+  }
+  td {
+    padding: 0.7rem 0.75rem;
+    border-bottom: 1px solid var(--lightgray);
+    vertical-align: top;
+  }
+  tr:hover td { background-color: rgba(127, 110, 80, 0.04); }
+  // photos in a cell: first one is the main square, extras become thumbnails
+  td:has(img) { min-width: 132px; }
+  td img {
+    width: 44px;
+    height: 44px;
+    max-width: none;
+    object-fit: cover;
+    border-radius: 2px;
+    margin: 0 4px 4px 0;
+    display: inline-block;
+    vertical-align: top;
+  }
+  td img:first-of-type {
+    width: 120px;
+    height: 120px;
+    display: block;
+    margin: 0 0 4px 0;
+  }
+}
+
+// ---------- callouts: marginal notes 批注, all in indigo blue ----------
+:root .callout.callout,
+:root .callout.callout[data-callout] {
+  --color: var(--accent);
+  --border: var(--accent);
+  --bg: var(--accent-bg);
+  border-radius: 0;
+  border: none;
+  border-left: 3px solid var(--accent);
+}
+
+// warnings / cautions: seal red
+:root .callout.callout[data-callout="warning"],
+:root .callout.callout[data-callout="caution"],
+:root .callout.callout[data-callout="attention"],
+:root .callout.callout[data-callout="danger"] {
+  --color: var(--seal);
+  --border: var(--seal);
+  --bg: rgba(168, 52, 42, 0.06);
+  border-left-color: var(--seal);
+}
+
+// ---------- tags: blue accent ----------
+a.internal.tag-link {
+  color: var(--accent);
+  background-color: var(--accent-bg);
+}
+a.internal.tag-link:hover { color: var(--tertiary); }
+
+// ---------- wide pages (frontmatter: cssclasses: [wide]) ----------
+@media all and #{$desktop} {
+  body.wide,
+  .page:has(article.wide) {
+    #quartz-body {
+      grid-template-columns: #{$sidePanelWidth} auto 0;
+    }
+    #quartz-body > .sidebar.right { display: none; }
+    #quartz-body > .center { max-width: none; }
+  }
+}
+
+// ---------- current page in sidebar & contents: green (red on hover) ----------
+.explorer a.active,
+.explorer a.is-active,
+.toc a.in-view {
+  color: var(--secondary);
+  font-weight: 600;
+}
+.explorer a:hover,
+.toc a:hover {
+  color: var(--tertiary);
+}
+
+// ---------- hide the Properties box under page titles ----------
+details.note-properties,
+.metadata-container[data-quartz-component="NotePropertiesComponent"] {
+  display: none !important;
+}
+
+// ---------- no hashtags anywhere on the site ----------
+a.tag-link,
+a.internal.tag-link,
+.tags,
+ul.tags,
+.note-properties-tags {
+  display: none !important;
+}
+
+// ---------- line spacing: 20% tighter than Quartz defaults ----------
+// (defaults: text 1.6rem, tables 2rem)
+article p,
+article li,
+.callout-content p,
+.explorer li,
+tbody,
+li,
+p {
+  line-height: 1.28rem;
+}
+.table-container > table > *,
+article table td,
+article table th {
+  line-height: 1.6rem;
+}
