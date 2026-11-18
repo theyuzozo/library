@@ -8,6 +8,7 @@ Moxibustion
 
 Herbal Medicine
 - [[Medicinal Mushroom 药用蘑菇]]
+- [[Tea Properties Archive 茶饮功效档案]]
 
 Massage
 

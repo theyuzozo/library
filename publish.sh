@@ -2,6 +2,7 @@
 # Publish the Obsidian vault to yuzozo.com
 # Usage: ./publish.sh            -> copy vault + push to GitHub (live in ~2 min)
 #        ./publish.sh preview    -> copy vault only (to check on http://localhost:8080 first)
+#        ./publish.sh serve      -> copy vault + start the local preview server
 set -e
 
 VAULT="$HOME/Library/CloudStorage/Dropbox-ASU/Zoey Tian/Yu Tian/3 Yu Zozo/1 Yu Zozo/yuzozo.com/Yu Zozo/"
@@ -16,8 +17,15 @@ fi
 
 cd "$QUARTZ"
 echo "📂 Copying notes from Obsidian..."
-rsync -a --delete --exclude '.obsidian' --exclude '.DS_Store' "$VAULT" "content/Yu Zozo/"
+# Body / Mind / Soul go straight into content/ (the site's home page content/index.md is kept)
+rsync -a --delete --filter='P /index.md' --exclude '.obsidian' --exclude '.DS_Store' "$VAULT" "content/"
 echo "✅ Notes copied."
+
+if [ "$1" = "serve" ]; then
+  echo "🖥  Starting local preview at http://localhost:8080 (leave this window open; Ctrl+C to stop)"
+  npx quartz build --serve
+  exit 0
+fi
 
 if [ "$1" = "preview" ]; then
   echo "👀 Check http://localhost:8080 (refresh with Cmd+Shift+R). Run 'yuzozo' when ready to publish."
